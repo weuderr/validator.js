@@ -5,15 +5,16 @@ const threeDigit = /^\d{3}$/;
 const fourDigit = /^\d{4}$/;
 const fiveDigit = /^\d{5}$/;
 const sixDigit = /^\d{6}$/;
+const eightDigit = /^\d{8}$/;
 
-const patterns = {
+var patterns = {
   AD: /^AD\d{3}$/,
   AT: fourDigit,
   AU: fourDigit,
   AZ: /^AZ\d{4}$/,
   BE: fourDigit,
   BG: fourDigit,
-  BR: /^\d{5}-\d{3}$/,
+  BR: /^\d{5}-\d{3}|\d{8}$/,
   BY: /2[1-4]{1}\d{4}$/,
   CA: /^[ABCEGHJKLMNPRSTVXY]\d[ABCEGHJ-NPRSTV-Z][\s\-]?\d[ABCEGHJ-NPRSTV-Z]\d$/i,
   CH: fourDigit,
